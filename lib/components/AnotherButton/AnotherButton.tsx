@@ -1,7 +1,16 @@
 import styles from "./AnotherButton.module.scss";
 
-const Button = (props: React.ButtonHTMLAttributes<HTMLButtonElement>) => {
-  return <button className={styles["anotherButton"]} {...props} />;
+interface AnotherButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant: string;
+}
+
+const AnotherButton = ({ variant, children, ...props }: AnotherButtonProps) => {
+  return (
+    <button data-variant={variant} className={styles["anotherButton"]} {...props}>
+      {children}
+    </button>
+  );
 };
 
-export default Button;
+export default AnotherButton;

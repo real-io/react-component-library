@@ -35,6 +35,13 @@
 
 .card {
   padding: 2em;
+  border: 2px solid blue;
+
+  .components {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 .read-the-docs {

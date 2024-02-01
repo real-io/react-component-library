@@ -9,6 +9,9 @@ import { libInjectCss } from "vite-plugin-lib-inject-css";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), libInjectCss(), dts({ include: "lib" })],
+  server: {
+    port: 3000
+  },
   build: {
     lib: {
       fileName: "main",
