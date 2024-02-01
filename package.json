@@ -12,6 +12,10 @@
   "publishConfig": {
     "@real-io:registry": "https://npm.pkg.github.com/"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:real-io/react-component-library.git"
+  },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
