@@ -4,9 +4,9 @@ on:
     # triggers this to run on pushes to main branch
     branches:
       - "main"
+permissions: write-all
 jobs:
   test-build:
-    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
