@@ -10,9 +10,10 @@ import { libInjectCss } from "vite-plugin-lib-inject-css";
 export default defineConfig({
   plugins: [react(), libInjectCss(), dts({ include: "lib" })],
   server: {
-    port: 3000
+    port: 5000
   },
   build: {
+    sourcemap: true,
     lib: {
       fileName: "main",
       entry: resolve(__dirname, "lib/main.ts"),
