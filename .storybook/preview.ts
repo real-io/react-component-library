@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react";
+import { globalDecorators } from "./decorators";
 
 const preview: Preview = {
   parameters: {
@@ -11,5 +12,7 @@ const preview: Preview = {
     },
   },
 };
+
+export const decorators = globalDecorators;
 
 export default preview;
